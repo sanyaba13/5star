@@ -87,7 +87,7 @@ function animate() {
 
 // Запускаем всё
 createStars();
-setInterval(createComet, 1000);  // Раз в 1 секунду
+setInterval(createComet, 3000);  // Раз в 1 секунду
 animate();
 
 // Обновляем размеры экрана при изменении окна
