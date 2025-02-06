@@ -24,8 +24,8 @@ function createComet() {
     comets.push({
         x: -100,
         y: Math.random() * canvas.height * 0.3,  // Верхняя часть экрана
-        speedX: Math.random() * 8 + 5,  // Скорость по X
-        speedY: Math.random() * 3 + 1.5, // Скорость по Y
+        speedX: Math.random() * 4 + 2,  // Скорость по X
+        speedY: Math.random() * 1.5 + 0.5, // Скорость по Y
         length: Math.random() * 150 + 100,  // Длина кометы
         opacity: 1
     });
