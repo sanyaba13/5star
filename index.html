@@ -8,14 +8,25 @@
   <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         
-        .gradient-text {
-            font-family: 'Lobster', cursive;
-            font-size: 3em;
-            background: linear-gradient(45deg, green, black );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
-        }
+.gradient-text {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  background: linear-gradient(270deg, green, black, green);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  animation: gradient-flow 5s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
     </style>
 </head>
 <body>
@@ -158,6 +169,7 @@
     </style>
 </body>
 </html>
+
 
 
 
